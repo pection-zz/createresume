@@ -12,7 +12,7 @@ ProjectsHeader = 'PROJECTS/PUBLICATIONS'
 ProjectOneTitle = '• Lens Quality Checking using Machine Learning (First place)'
 ProjectOneDesc = '- Published by Bachelor of Engineering Program in Robotics Engineering\n- This research project is about checking the quality of the lens with \nmachine learning methods\n- The result of experiments show that the lens quality checking \nusing machine learning can be achieved a performance testing with 99 %\n- This method can be applied to \ncheck the quality of lens in manufacturing automation in the future\n\nKeywords : checking the quality of the lens / polarization / image processing \n/ machine learning'
 ProjectTwoTitle= '• Humanoid Leaguge & 3rd Internation Award'
-ProjectTwoDesc= '- Get 3rd place Robocup Asia-Pacific RCAP 2017 in Humanoid Leaguges(Kid Size)\n- Learning in Humanoid-lab to 4 years \n- Self-Learning Skills'
+ProjectTwoDesc= '- Get 3rd prize RoboCupSoccer:Humanoid Leaguges(Kid Size) in Robocup Asia-Pacific RCAP 2017\n- Learning in Humanoid-lab to 4 years \n- Self-Learning Skills'
 ProjectThreeTitle= '• XY-Plotter'
 ProjectThreeDesc= '- This is XY Plotter Project for control XY plotter with forward kinematic pid control \nand combine a image processing Draw Picture in 24FJ48GA002 controller'
 
@@ -27,7 +27,7 @@ EduHeader = 'EDUCATION & AWARD'
 EduOneTitle = 'King Mongkut’s University of Technology Thonburi\nBachelor of Engineering Program in Robotics Engineeing'
 EduOneTime = '2015-2019 GPAX: 2.85 \nActive Recruitment Scholarship 50%'
 SkillsHeader = 'Skills'
-SkillsDesc = '- Python\n- Image processing\n- Machine Learning\n Pandas\n- JavaScipt\n- C,C++\n- mbed OS\n- NumPy\n- PID Controll\n- Command Line\n- Git and Version Control\n- ROS\n- APIs\n- GUI\n - Electronic\n- Mechanical'
+SkillsDesc = '- Python\n- Image processing\n- Machine Learning\n- Matlab\n- Pandas\n- JavaScipt\n- C,C++\n- mbed OS\n- NumPy\n- PID Controll\n- Command Line\n- Git and Version Control\n- ROS\n- APIs\n- GUI\n - Electronic\n- Mechanical'
 ExtrasDesc = '- Learned popular controller \n- Programing languages \n- Image processing \n- Machine learning \n- Humanoid Robot'
 WorkHeader = 'EXPERIENCE'
 WorkOneTitle = 'Kanazawa University/ Robotic researcher'
@@ -86,14 +86,14 @@ plt.annotate(CodeTitle, (.73,.25), weight='regular', fontsize=10, color='#ffffff
 
 
 
-profilepic =mpimage.imread('profile.png')
+profilepic =mpimage.imread('static/Image/profile.png')
 profilebox = OffsetImage(profilepic, zoom=0.18)
 profileab = AnnotationBbox(profilebox,(0.84, 0.8))
 ax.add_artist(profileab)
 
-qr_code = mpimage.imread('myqr.png',0)
+qr_code = mpimage.imread('static/Image/myqr.png',0)
 imagebox = OffsetImage(qr_code, zoom=0.5)
 imageqrab = AnnotationBbox(imagebox, (0.84, 0.12))
 ax.add_artist(imageqrab)
-plt.savefig('resumefrompython_pdf.pdf', dpi=300, bbox_inches='tight')
-plt.savefig('resumefrompython_png.png', dpi=300, bbox_inches='tight')
+plt.savefig('static/Pdf/resumefrompython_pdf.pdf', dpi=300, bbox_inches='tight')
+plt.savefig('static/Pdf/resumefrompython_png.png', dpi=300, bbox_inches='tight')
